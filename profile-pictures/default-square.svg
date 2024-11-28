@@ -1,0 +1,124 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 600 600"
+        width="600"
+        height="600">
+
+    <defs>
+        <style type="text/css"><![CDATA[
+        .outline {
+            stroke: white;
+            stroke-width: 30;
+            stroke-linecap: round;
+        }
+        .outline-circle {
+            stroke: white;
+            stroke-width: 30;
+            stroke-linecap: round;
+            fill: #222222;
+        }
+        .maze1 {
+            stroke: white;
+            stroke-width: 3;
+            stroke-linecap: round;
+        }
+        .th-background {
+            fill: #222222;
+        }
+        .background {
+            fill: #222222;
+        }
+        .t {
+            stroke: white;
+            stroke-width: 20;
+            stroke-linecap: round;
+        }
+        .h {
+            stroke: white;
+            stroke-width: 10;
+            stroke-linecap: round;
+        }
+    ]]></style>
+    </defs>
+
+    <rect class="background" x="0" y="0" width="600" height="600"/>
+
+    <!--<line class="outline" x1="0" y1="0" x2="600" y2="0"/>
+    <line class="outline" x1="0" y1="0" x2="0" y2="600"/>
+    <line class="outline" x1="600" y1="0" x2="600" y2="600"/>
+    <line class="outline" x1="0" y1="600" x2="600" y2="600"/>-->
+
+    <!--<circle class="outline-circle" cx="300" cy="300" r="300" />-->
+
+    <line class="maze1" x1="50" y1="200" x2="50" y2="300"/>
+    <line class="maze1" x1="0" y1="50" x2="50" y2="50"/>
+    <line class="maze1" x1="50" y1="200" x2="100" y2="200"/>
+    <line class="maze1" x1="500" y1="400" x2="550" y2="400"/>
+    <line class="maze1" x1="200" y1="500" x2="200" y2="550"/>
+    <line class="maze1" x1="100" y1="450" x2="150" y2="450"/>
+    <line class="maze1" x1="100" y1="0" x2="100" y2="100"/>
+    <line class="maze1" x1="250" y1="500" x2="250" y2="550"/>
+    <line class="maze1" x1="100" y1="350" x2="150" y2="350"/>
+    <line class="maze1" x1="50" y1="150" x2="50" y2="250"/>
+    <line class="maze1" x1="100" y1="350" x2="100" y2="400"/>
+    <line class="maze1" x1="50" y1="500" x2="100" y2="500"/>
+    <line class="maze1" x1="50" y1="450" x2="50" y2="500"/>
+    <line class="maze1" x1="50" y1="450" x2="100" y2="450"/>
+    <line class="maze1" x1="50" y1="400" x2="100" y2="400"/>
+    <line class="maze1" x1="500" y1="450" x2="600" y2="450"/>
+    <line class="maze1" x1="550" y1="200" x2="650" y2="200"/>
+    <line class="maze1" x1="100" y1="550" x2="150" y2="550"/>
+    <line class="maze1" x1="500" y1="300" x2="550" y2="300"/>
+    <line class="maze1" x1="250" y1="550" x2="300" y2="550"/>
+    <line class="maze1" x1="100" y1="500" x2="100" y2="600"/>
+    <line class="maze1" x1="550" y1="150" x2="550" y2="200"/>
+    <line class="maze1" x1="300" y1="550" x2="400" y2="550"/>
+    <line class="maze1" x1="100" y1="250" x2="100" y2="300"/>
+    <line class="maze1" x1="100" y1="250" x2="150" y2="250"/>
+    <line class="maze1" x1="150" y1="500" x2="150" y2="550"/>
+    <line class="maze1" x1="500" y1="550" x2="500" y2="650"/>
+    <line class="maze1" x1="450" y1="50" x2="450" y2="100"/>
+    <line class="maze1" x1="150" y1="50" x2="200" y2="50"/>
+    <line class="maze1" x1="0" y1="550" x2="50" y2="550"/>
+    <line class="maze1" x1="50" y1="0" x2="50" y2="100"/>
+    <line class="maze1" x1="550" y1="150" x2="550" y2="250"/>
+    <line class="maze1" x1="350" y1="550" x2="350" y2="650"/>
+    <line class="maze1" x1="350" y1="400" x2="350" y2="450"/>
+    <line class="maze1" x1="350" y1="250" x2="350" y2="300"/>
+    <line class="maze1" x1="100" y1="300" x2="150" y2="300"/>
+    <line class="maze1" x1="550" y1="350" x2="650" y2="350"/>
+    <line class="maze1" x1="50" y1="250" x2="50" y2="350"/>
+    <line class="maze1" x1="500" y1="500" x2="550" y2="500"/>
+    <line class="maze1" x1="350" y1="500" x2="400" y2="500"/>
+    <line class="maze1" x1="400" y1="0" x2="400" y2="50"/>
+    <line class="maze1" x1="350" y1="50" x2="450" y2="50"/>
+    <line class="maze1" x1="550" y1="550" x2="550" y2="600"/>
+    <line class="maze1" x1="250" y1="50" x2="250" y2="100"/>
+    <line class="maze1" x1="400" y1="50" x2="500" y2="50"/>
+    <line class="maze1" x1="250" y1="50" x2="300" y2="50"/>
+    <line class="maze1" x1="550" y1="0" x2="550" y2="50"/>
+    <line class="maze1" x1="500" y1="100" x2="550" y2="100"/>
+    <line class="maze1" x1="450" y1="500" x2="450" y2="550"/>
+
+    <rect class="th-background" x="100" y="100" width="400" height="100"/>
+    <rect class="th-background" x="200" y="200" width="100" height="300"/>
+    <rect class="th-background" x="400" y="200" width="100" height="300"/>
+    <rect class="th-background" x="300" y="300" width="100" height="100"/>
+
+    <line class="t" x1="100" y1="100" x2="400" y2="100"/>
+    <line class="t" x1="100" y1="100" x2="100" y2="200"/>
+    <line class="t" x1="100" y1="200" x2="200" y2="200"/>
+    <line class="t" x1="200" y1="500" x2="200" y2="200"/>
+    <line class="t" x1="300" y1="500" x2="300" y2="200"/>
+    <line class="t" x1="200" y1="500" x2="300" y2="500"/>
+    <line class="t" x1="400" y1="200" x2="400" y2="100"/>
+    <line class="t" x1="400" y1="200" x2="300" y2="200"/>
+
+    <line class="h" x1="500" y1="500" x2="500" y2="100"/>
+    <line class="h" x1="400" y1="100" x2="500" y2="100"/>
+    <line class="h" x1="400" y1="500" x2="500" y2="500"/>
+    <line class="h" x1="400" y1="500" x2="400" y2="400"/>
+    <line class="h" x1="400" y1="300" x2="400" y2="200"/>
+    <line class="h" x1="400" y1="300" x2="300" y2="300"/>
+    <line class="h" x1="400" y1="400" x2="300" y2="400"/>
+</svg>
