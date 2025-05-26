@@ -17,7 +17,13 @@ function error_code() {
 
 function execution_time() {
     if [[ -n "${T_LAST_CMD_TIME_MS}" ]]; then
-        echo " $(accent_color)${T_LAST_CMD_TIME_MS}ms$(default_color)"
+        if (( T_LAST_CMD_TIME_MS >= 1000 )); then
+            local sec=$((T_LAST_CMD_TIME_MS / 1000))
+            local ms=$((T_LAST_CMD_TIME_MS % 1000))
+            echo " $(accent_color)${sec}.${ms}s$(default_color)"
+        else
+            echo " $(accent_color)${T_LAST_CMD_TIME_MS}ms$(default_color)"
+        fi
     fi
 }
 
@@ -53,6 +59,7 @@ function precmd() {
     else
         export T_LAST_CMD_TIME_MS=""
     fi
+    unset T_TIMER_START
 
     function async() {
         # save to temp file
