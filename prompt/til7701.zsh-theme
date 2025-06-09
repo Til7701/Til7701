@@ -29,7 +29,7 @@ function execution_time() {
 
 function git_prompt() {
     if [ -d .git ] || git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
-	    echo " git$(accent_color): $(git_commits_ahead)$(git_commits_behind)$(default_color)$(git_repo_name) $(accent_color)🖈 $(git_prompt_remote)$(git_current_branch)$(default_color)$(parse_git_dirty)$(git_prompt_short_sha)$(git_prompt_tags)"
+	    echo " $(git_commits_ahead)$(git_commits_behind)$(accent_color)🖈 $(git_prompt_remote)$(git_current_branch)$(default_color)$(parse_git_dirty)$(git_prompt_short_sha)$(git_prompt_tags)"
     fi
 }
 
@@ -120,4 +120,3 @@ ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_TAGS_PREFIX="$(accent_color)🏷 $(default_color)"
 ZSH_THEME_GIT_TAGS_SEPARATOR=" "
 ZSH_THEME_GIT_TAGS_SUFFIX=""
-
